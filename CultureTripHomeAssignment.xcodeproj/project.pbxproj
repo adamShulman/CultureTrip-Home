@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,17 @@
 		A4AD38592538394E004062DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AD38572538394E004062DB /* Main.storyboard */; };
 		A4AD385B2538394F004062DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4AD385A2538394F004062DB /* Assets.xcassets */; };
 		A4AD385E2538394F004062DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AD385C2538394F004062DB /* LaunchScreen.storyboard */; };
+		A4AD386B2538477C004062DB /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AD386A2538477C004062DB /* ArticlesViewController.swift */; };
+		A4AD386F253852B2004062DB /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AD386E253852B2004062DB /* ArticleModel.swift */; };
+		A4AD387925386224004062DB /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AD387825386224004062DB /* ArticleDetailViewController.swift */; };
+		A4AD387E253864BB004062DB /* ArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AD387C253864BB004062DB /* ArticleCollectionViewCell.swift */; };
+		A4AD387F253864BB004062DB /* ArticleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4AD387D253864BB004062DB /* ArticleCollectionViewCell.xib */; };
+		DF829227ADA74740358A6F55 /* Pods_CultureTripHomeAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17D6925884731C882B76287 /* Pods_CultureTripHomeAssignment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		593394B7B2B64B18F22ABA18 /* Pods-CultureTripHomeAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CultureTripHomeAssignment.debug.xcconfig"; path = "Target Support Files/Pods-CultureTripHomeAssignment/Pods-CultureTripHomeAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		8A1A803F717A226F29A35342 /* Pods-CultureTripHomeAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CultureTripHomeAssignment.release.xcconfig"; path = "Target Support Files/Pods-CultureTripHomeAssignment/Pods-CultureTripHomeAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		A4AD384E2538394E004062DB /* CultureTripHomeAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CultureTripHomeAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4AD38512538394E004062DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4AD38532538394E004062DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,12 @@
 		A4AD385A2538394F004062DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4AD385D2538394F004062DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4AD385F2538394F004062DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4AD386A2538477C004062DB /* ArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
+		A4AD386E253852B2004062DB /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		A4AD387825386224004062DB /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
+		A4AD387C253864BB004062DB /* ArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewCell.swift; sourceTree = "<group>"; };
+		A4AD387D253864BB004062DB /* ArticleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCollectionViewCell.xib; sourceTree = "<group>"; };
+		F17D6925884731C882B76287 /* Pods_CultureTripHomeAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CultureTripHomeAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF829227ADA74740358A6F55 /* Pods_CultureTripHomeAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11D7D07D9D7F09090BB75CB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				593394B7B2B64B18F22ABA18 /* Pods-CultureTripHomeAssignment.debug.xcconfig */,
+				8A1A803F717A226F29A35342 /* Pods-CultureTripHomeAssignment.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A4AD38452538394E004062DB = {
 			isa = PBXGroup;
 			children = (
 				A4AD38502538394E004062DB /* CultureTripHomeAssignment */,
 				A4AD384F2538394E004062DB /* Products */,
+				11D7D07D9D7F09090BB75CB8 /* Pods */,
+				B7FD498FDE218234FF76A5E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +82,60 @@
 		A4AD38502538394E004062DB /* CultureTripHomeAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				A4AD38662538397A004062DB /* Model */,
+				A4AD386725383980004062DB /* View */,
+				A4AD386825383989004062DB /* Controller */,
 				A4AD38512538394E004062DB /* AppDelegate.swift */,
 				A4AD38532538394E004062DB /* SceneDelegate.swift */,
-				A4AD38552538394E004062DB /* ViewController.swift */,
 				A4AD38572538394E004062DB /* Main.storyboard */,
 				A4AD385A2538394F004062DB /* Assets.xcassets */,
 				A4AD385C2538394F004062DB /* LaunchScreen.storyboard */,
 				A4AD385F2538394F004062DB /* Info.plist */,
 			);
 			path = CultureTripHomeAssignment;
+			sourceTree = "<group>";
+		};
+		A4AD38662538397A004062DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4AD386E253852B2004062DB /* ArticleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A4AD386725383980004062DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4AD387B2538649F004062DB /* Collection View Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4AD386825383989004062DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4AD38552538394E004062DB /* ViewController.swift */,
+				A4AD386A2538477C004062DB /* ArticlesViewController.swift */,
+				A4AD387825386224004062DB /* ArticleDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A4AD387B2538649F004062DB /* Collection View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A4AD387C253864BB004062DB /* ArticleCollectionViewCell.swift */,
+				A4AD387D253864BB004062DB /* ArticleCollectionViewCell.xib */,
+			);
+			path = "Collection View Cells";
+			sourceTree = "<group>";
+		};
+		B7FD498FDE218234FF76A5E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F17D6925884731C882B76287 /* Pods_CultureTripHomeAssignment.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4AD38622538394F004062DB /* Build configuration list for PBXNativeTarget "CultureTripHomeAssignment" */;
 			buildPhases = (
+				DA00B59FC758E5F76753B4CE /* [CP] Check Pods Manifest.lock */,
 				A4AD384A2538394E004062DB /* Sources */,
 				A4AD384B2538394E004062DB /* Frameworks */,
 				A4AD384C2538394E004062DB /* Resources */,
+				184265FB8D3DCA5ED1C902DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4AD385E2538394F004062DB /* LaunchScreen.storyboard in Resources */,
+				A4AD387F253864BB004062DB /* ArticleCollectionViewCell.xib in Resources */,
 				A4AD385B2538394F004062DB /* Assets.xcassets in Resources */,
 				A4AD38592538394E004062DB /* Main.storyboard in Resources */,
 			);
@@ -132,12 +206,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		184265FB8D3DCA5ED1C902DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CultureTripHomeAssignment/Pods-CultureTripHomeAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CultureTripHomeAssignment/Pods-CultureTripHomeAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CultureTripHomeAssignment/Pods-CultureTripHomeAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA00B59FC758E5F76753B4CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CultureTripHomeAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A4AD384A2538394E004062DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A4AD38562538394E004062DB /* ViewController.swift in Sources */,
+				A4AD386F253852B2004062DB /* ArticleModel.swift in Sources */,
+				A4AD387925386224004062DB /* ArticleDetailViewController.swift in Sources */,
+				A4AD386B2538477C004062DB /* ArticlesViewController.swift in Sources */,
+				A4AD387E253864BB004062DB /* ArticleCollectionViewCell.swift in Sources */,
 				A4AD38522538394E004062DB /* AppDelegate.swift in Sources */,
 				A4AD38542538394E004062DB /* SceneDelegate.swift in Sources */,
 			);
@@ -283,12 +403,14 @@
 		};
 		A4AD38632538394F004062DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 593394B7B2B64B18F22ABA18 /* Pods-CultureTripHomeAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UVPCE6PG4A;
 				INFOPLIST_FILE = CultureTripHomeAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +424,14 @@
 		};
 		A4AD38642538394F004062DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A1A803F717A226F29A35342 /* Pods-CultureTripHomeAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UVPCE6PG4A;
 				INFOPLIST_FILE = CultureTripHomeAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
